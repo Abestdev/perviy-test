@@ -188,17 +188,43 @@ header {
 	background: url(../img/fon.jpg) no-repeat center;
 	height: 830px;
 	background-size: 100% !important; 
-
+	
 }
 
 .bigp{
 	margin-top: 100px;
+	padding: 127px 0px 80px 127px;
+	color: #fff;
+	font-size: 100px;
+	
+}
+
+.Toyota{
+	padding: 20px; 
+	font-size: 100px;
+	color: #fe372f; 
+
+}
+.the_dream{
+	margin-top: 83px;
+	padding-left: 100px;
+	display: block;
+}
+.bigp>.join{
+	font-size: 20px;
 }
 .join{
-	position: relative;
+	position: absolute;	
+	width:545px;
+	height: 158px;
 	margin-left: 1000px;
+	margin-top: -150px;
+	padding: 20px;
+	right: 0;
 
-
+	border: 2px solid;
+	border-right: none;
+	border-radius: 10px 0px 0px 10px;
 }
 
 .HH{
