@@ -1,0 +1,14 @@
+1 на папке правой кнопкой 
+ -Git bash; 
+2 git init;
+3 git add --all; или git add.; 
+4 git commit -m 'коментарий';
+5 git remote add origin  и  путь по ходу лучше https://   
+(но возможно через git://
+или ssh но эти два пока не пробовал)
+7 git push -u origin master
+ 
+// где нибудь по пути этого выполнения проверять git satus;
+// * все пиши без 
+скобок (),[] или <> и без **
+иногда git push -u origin master --force
