@@ -1,0 +1,56 @@
+1 на папке правой кнопкой 
+ -Git bash; 
+2 git init;
+3 git add --all; или git add.; 
+4 git commit -m 'коментарий';
+5 git remote add origin  и  путь по ходу лучше https://   
+(но возможно через git://
+или ssh но эти два пока не пробовал)
+7 git push -u origin master
+ 
+// где нибудь по пути этого выполнения проверять git satus;
+// * все пиши без 
+скобок (),[] или <> и без **
+иногда git push -u origin master --force
+
+
+
+
+
+способ с созданием нового 
+1 создаю на github новый репозиторий 
+2 (инструкция с первой созданной страници:
+…or create a new repository on the command line
+
+
+echo "# Travler-" >> README.md
+git init
+[только после инициализации я делаю как сам git рекомендует- git add . ]
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/Abestdev/Travler-.git
+git push -u origin master
+…or push an existing repository from the command line
+
+
+git remote add origin https://github.com/Abestdev/Travler-.git
+git push -u origin master
+
+)делаем все по этой инструкции.
+
+
+
+способ с клонированием:
+1 //комманда чтоб перейти в папку(кавычки нужны т.к. в пути есть пробулы)
+cd "/c/Documents and Settings/admin/Рабочий стол/1"
+//и еще инструкции
+	
+Is there a way to save long directories? I know cd $USER will bring me to my users directory on windows. – meiryo Aug 3 '13 at 16:14
+1	 	
+@reubenjohn, using Console2 for console provides a setting "Startup dir". Btw this article describes to make the console Quake-style dropping down form top of the screen. – Vorac Apr 24 '14 at 8:27
+3	 	
+If there are any spaces in the path then you need quotes. eg: cd "/c/program files (x86)/git/bin/" – CAD bloke Jan 24 '15 at 9:34 
+2	 	
+@the-red-pea Paths starting with a / such as /c/project/ are absolute paths and always work regardless of your current path. when the path doesn't start with a forward-slash (relative paths) sush as cd project it will try to go that subdirectory based on your current-working-directory (pwd) – Bob Fanger Jul 26 '15 at 12:14
+
+2 git clone ссылка с githab  
