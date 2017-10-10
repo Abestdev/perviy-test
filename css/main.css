@@ -52,7 +52,6 @@ a, a:hover {text-decoration: none;}
 	url('../fonts/NexaLight.ttf') format('truetype'),
 	url('../fonts/NexaLight.svg#NexaLight') format('svg');
 }
-
 .clearfix:before,
 .clearfix:after {
 	content: " ";
@@ -61,102 +60,74 @@ a, a:hover {text-decoration: none;}
 .clearfix:after {clear: both;}
 
 .left {float:left;}
+
 .right {float:right;}
 
-/*.container {
-	
-	max-width: 960px;
-
+.hidden{
+	display: none;
+}
+.fullwidth{
+	width: 100%;
+	z-index: 999;
+}
+.wrapper{
+	min-width: 960px;
+	max-width: 1680px;
 	margin: 0 auto;
-	padding: 0 10px;
-	}*/
+}
 
+/*----------navigation section ----------*/
 
+nav .titl{
+	color: #ca3e38;
+	float: left;
+	margin: 37px 0px 43px 20px;
+	width: 250px;
+}
+nav{
+	top: 0;
+	position: fixed;
+	background: url(../img/bg.png) repeat-x;
+	display: block; 
+	background-position: top center;
+	width: 100%;
+	height: 100px;
+}
+nav .logo{
+	margin: 8px 10px 8px 130px ;
+	float: left;
+}
+nav  ul  {
+	display: block;
+	float: left;
+	list-style: none;
+}
+nav ul li.menu{
+	display: inline-block;
+	margin: 37px 0px 43px 0px;
+	padding-left: 69px;
+}
+nav li.menu> a{
+	text-decoration: none;
+	color: #282828;
+	padding-bottom: 17px;	
+	font-size: 24px;
+	padding:10px 10px 30px 10px;
+	background: url(../img/border.png) no-repeat center 50px;
+}
+nav li.menu> a:hover{
+	color: #810500;
+}
+a.submenu{
+	position: absolute;
+	display: none;
+}
 
-	/*ПОГНАЛИ*/
-
-
-	.fullwidth{
-		width: 100%;
-	}
-	.wrapper{
-		min-width: 960px;
-		max-width: 1680px;
-
-		margin: 0 auto;
-
-
-	}
-
-	nav .titl{
-		color: #ca3e38;
-		float: left;
-		margin: 37px 0px 0px 20px;
-		width: 150px;
-
-	}
-
-	nav{
-		top: 0;
-		position: fixed;
-		background: url(../img/bg.png) repeat-x;
-		display: block; 
-		background-position: top center;
-		width: 100%;
-		height: 100px;
-		z-index: 1;
-
-	}
-
-
-	nav .logo{
-		margin: 8px 10px 0px 130px ;
-		float: left;
-
-
-	}
-	nav  ul  {
-		display: block;
-		float: left;
-		list-style: none;
-	}
-
-	nav ul li.menu{
-		display: inline-block;
-		margin: 37px 0px 0px 0px;
-		padding-left: 69px;
-		font-size: 
-
-	}
-
-	nav li.menu> a{
-		text-decoration: none;
-		color: #282828;
-		padding-bottom: 17px;	
-		font-size: 24px;
-
-	}
-
-	nav li.menu> a:hover{
-		color: #810500;
-	}
-
-
-	nav li.menu> a{
-		padding:10px 10px 30px 10px;
-		background: url(../img/border.png) no-repeat center 50px;
-
-	}
-
-	a.submenu{
-		position: absolute;
-		display: none;
-	}
 /* немного не правтльноli.menu:hover{
 		list-style: none;
 		display: block;
 		width: 188px;
-		background: url(../img/bg.png) repeat-x; *
+		background: url(../img/bg.png) repeat-x; */
 
 	}
 /* НЕ ЗНАЮ НАДО ЛИ ЭТО
@@ -180,98 +151,182 @@ ul.submenu > li > a:hover {
 }
 
 */
+
 .emp{
-	position: relative;
 	height: 100px;
 	width: 960px;
 }	
+/*----------/navigation section ----------*/
+
+/*----------header section ----------*/
+
 header {
 	background: url(../img/fon.jpg) no-repeat center;
 	height: 830px;
-	/*background-size: 100% !important; */
-	position: relative;	
+	background-size: 100% !important; 	
+	padding-bottom: 100px;
 }
-.bigp {
-	margin: 124px 0px 70px 93px;
+.bigp{
+	margin-top: 100px;
+	padding: 127px 0px 80px 127px;
 	color: #fff;
-	font-size: 100px;
-	font-weight: 700;
-	display: inline-block;
-}  
+	font-size: 100px;	
+	overflow: hidden;
+}
 .Toyota{
 	padding: 20px; 
 	font-size: 100px;
 	color: #fe372f; 
 }
 .the_dream{
-	margin-top: 97px;
+	margin-top: 83px;
 	padding-left: 100px;
 	display: block;
 }
 .bigp>.join{
 	font-size: 20px;
 }
-.join {    
-	display: inline-block;
-	position:relative;
-	float: right;
-	width: 397px;
-	height: 80px;
-	margin-top: 80px;
-	margin-bottom: 20px;
-	padding: 20px;
-	border: 2px solid white;
-	border-right:none; 
-	border-radius: 10px 0px 0px 10px;
-	vertical-align: top;
+.join {
+    display: block;
+    float: right;
+	margin-top: -140px;
+    padding: 20px;
+    background-color: #CEB6C5;
+    border: 2px solid #fff;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
 }
-
-
-
-.HH1 {
+.join li{
+	display: inline-block;
+	padding-left: 10px;
+	margin: 0px 0px 20px 25px;
+}
+.join p{
+	padding-left: 61px;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+.join a{
+	color: #fff;
+}
+.join a:hover{
+	color: #000;
+}
+.join i:hover{
+	color: #810500;
+}
+.tell{	
+	padding-left: 35px;	
+	font-size: 23px;
+}
+.tell i,.tell i:hover{
+	color:#FFFFFF;
+}
+.HH1 {	
 	color: #810500;
 	font-size: 2em;
 }
+.row1{	
+	margin-left: 350px;
+	width: 450px;
+	display: block;
+	float: left;
+	clear: both;
+}
+.row1> ul>li{
+	list-style: square  ;
+	color: #fff;
+}
 .HH2 {
 	color: #810500;
-	font-size: 1.5em;
+	font-size: 1.7em;
+	padding-bottom: 20px;	
 }
-.stylish{
-	list-style-type: decimal;
-	
-	
-}
-.llist{
-	display: inline-block;
-	list-style: square;
-	width:460px;
-	margin-left: 330px;
-
-
-}
-.rlist{
-	display: inline-block;
+.row2{
 	margin-left: 50px;
-	width:460px;
+	width: 450px;
+	display: block;
+	float: left;	
 }
-/*
-.nav {
-	background: linear-gradient(to bottom, #fff, #f1f2f2); /* Градиент */
-	border: 1px solid #999; /* Параметры рамки */
-	padding: 0 5px; /* Поля */
-	font: 14px Arial, sans-serif; /* Параметры шрифта */
-	box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Тень под меню */
-/*}
-.menu li {
-	display: inline-block; /* Выстраиваем по горизонтали */
-	border-right: 1px solid #fff; /* Белая линия справа */
-/*}
-.menu a {
-	text-decoration: none; /* Убираем подчёркивание */
-	color: #4c4c4c; /* Цвет ссылок */
-	display: block; /* Блочные ссылки */
-	padding: 10px 15px; /* Поля */
-	border-right: 1px solid #d8d8d8; /* Серая линия справа */
-/*}
-.menu a:hover { color: #006cc9; }
-*/
+.row2> ol>li{
+	list-style: decimal;
+	color: #ff0a00;
+}
+.licolornum{
+	color: #fff;
+}
+
+
+/*----------/header section ----------*/
+
+/*----------slider  ----------*/
+.slider{
+	width:100%;
+	overflow: hidden;
+}
+
+/*----------/slider  ----------*/
+
+
+/*----------popup effect  ----------*/
+
+#parent_popup {
+	background: #000;
+	height: 100%;
+	opacity: 0.9;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+#popup {
+	background-color: #00f;
+	height: 500px;
+	position: fixed;
+	top: 250px;
+	left: 40%;
+	color: #f00; 
+	width: 300px;
+}
+/*----------/popupe ffect   ----------*/
+
+.section{
+	background-color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+
+.testdrive{
+	margin: 50px 0px 80px 370px;
+	display: inline-block;
+	width: 280px;	
+}
+.testdrive h2{
+	font-size: 2em;
+	padding: 24px;
+	color: red;
+}
+.testdrive a:hover{
+	color: #3918A2;
+	font-size: 1.21em;
+}
+.otz{
+	margin-left: 200px;
+	display: inline-block;
+	width:550px;
+}
+.otz h2{
+	font-size: 2em;
+	padding: 24px;
+	color: red;
+}
+
+/*----------/header section ----------*/
+/*----------footer section ----------*/
+footer{
+	height: 40px;
+	width: 100%;
+	background-color: #000;	
+}
+/*----------/footer section ----------*/
